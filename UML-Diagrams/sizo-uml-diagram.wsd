@@ -1,0 +1,54 @@
+@startuml
+Class Profile {
+  id: ID
+  name: String
+  surname: String
+  occupation: ENUM
+  age: Int
+  email: String
+  cell: String
+  gender: String
+  questiions: [Question]
+  answers: [Answer]
+  address: String
+  userRole: Enum
+  questionCategory: ENUM
+}
+
+Class Question {
+  id: ID
+  profileId: ID
+  question: String
+  answers: [Answer]
+}
+Profile --{ Question
+
+Class Answer {
+  id: ID
+  profileId: ID
+  questiionId: ID
+  answer: String
+  rating: Int
+  comments:[Comment]
+}
+Class VolunteerWorkAnouncement {
+  id: ID
+  profileId: ID
+  anouncement: String
+  comments: [Comment]
+}
+
+Class Comment {
+  id: ID
+  answerId: ID
+  anouncementId: ID
+  profileId: ID
+  comment: String
+}
+Profile --{ Comment
+Answer --{ Comment
+VolunteerWorkAnouncement --{ Comment
+Profile --{ VolunteerWorkAnouncement
+Profile --{ Answer
+Question --{ Answer
+@enduml
