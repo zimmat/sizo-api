@@ -1,0 +1,20 @@
+{
+  "name": "sizo-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Zimkhitha Matshangaza",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server": "^2.11.0",
+    "apollo-server-koa": "^2.11.0",
+    "graphql": "^14.6.0",
+    "graphql-tools": "^4.0.7",
+    "koa": "^2.11.0",
+    "koa-router": "^8.0.8",
+    "mongodb": "^3.5.5"
+  }
+}
