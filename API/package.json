@@ -9,7 +9,7 @@
   "author": "Zimkhitha Matshangaza",
   "license": "ISC",
   "dependencies": {
-    "apollo-server": "^2.11.0",
+    "apollo-server": "^2.25.4",
     "apollo-server-koa": "^2.11.0",
     "graphql": "^14.6.0",
     "graphql-tools": "^4.0.7",
